@@ -5,4 +5,8 @@ const router = Router()
 const getItems=(req:Request,res:Response)=>{
     res.send({data:"OK, Controller"})
 }
-export{router, getItems}
+const getItem =()=>{}
+const updateItem =()=>{}
+const postItem =()=>{}
+const deleteItem =()=>{}
+export{router, getItems, getItem, updateItem, postItem, deleteItem}
