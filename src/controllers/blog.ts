@@ -1,5 +1,4 @@
 import { Request, Response, Router } from "express";
-import { interItem } from "../services/item";
 import { handleHttp } from "../utils/error.handle";
 
 const router = Router()
@@ -8,14 +7,14 @@ const getItems=(req:Request,res:Response)=>{
     try {
         res.send({data:"OK, Controller"})        
     } catch (error) {
-        handleHttp(res,'ERROR_GET_ITEMS') 
+        handleHttp(res,'ERROR_GET_BLOG') 
     }
 }
 const getItem =(req:Request,res:Response)=>{
     try {
         
     } catch (error) {
-        handleHttp(res,'ERROR_GET_ITEMS') 
+        handleHttp(res,'ERROR_GET_BLOG') 
     }
 
 }
@@ -23,17 +22,16 @@ const updateItem =(req:Request,res:Response)=>{
     try {
         
     } catch (error) {
-        handleHttp(res,'ERROR_GET_ITEMS') 
+        handleHttp(res,'ERROR_GET_BLOG') 
     }
 
 }
-const postItem = async (req:Request,res:Response)=>{
+const postItem =(req:Request,res:Response)=>{
     try {
         const body = req.body
-        const responseItem = await interItem(body)
-        res.send(responseItem)
+        res.send(body)
     } catch (error) {
-        handleHttp(res,'ERROR_GET_ITEMS', error) 
+        handleHttp(res,'ERROR_GET_BLOG') 
     }
 
 }
@@ -41,7 +39,7 @@ const deleteItem =(req:Request,res:Response)=>{
     try {
         
     } catch (error) {
-        handleHttp(res,'ERROR_GET_ITEMS') 
+        handleHttp(res,'ERROR_GET_BLOG') 
     }
 
 }

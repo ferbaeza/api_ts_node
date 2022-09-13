@@ -1,5 +1,5 @@
 import { Request, Router, Response } from "express";
-import { deleteItem, getItem, getItems, postItem, updateItem } from "../controllers/items";
+import { deleteItem, getItem, getItems, postItem, updateItem } from "../controllers/blog";
 
 const router = Router()
 router.get('/', getItems)

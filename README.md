@@ -6,7 +6,7 @@
 
 # Steps
 
-* Install globaly **typescript** and **ts-node**  
+* Install globaly **typescript** and **ts-node** // *sudo npm i typescript ts-node -g*
 * You can install **nodemon** globally too.
 * Make a project folder and move into
 * Init a typescript and node project
@@ -21,4 +21,25 @@ npm i @types/express @types/cors @types/dotenv @types/multer @types/mongoose nod
 
 Once everything is installed open your code_editor
 Firts create a **.gitignore** file and attach *node_modules* a *.env* 
+
+# Source
+
+We will deploy a model-view-controller app.
+We gonna a start to deploy our project and first at all we will make a folder structure 
+```bash
+mkdir src
+cd src
+mkdir routes
+mkdir controllers
+mkdir config
+```
+* src
+    * config
+    * models
+    * controllers
+    * routes
+    * interfaces
+    * app.ts
+
+
 
